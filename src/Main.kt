@@ -58,29 +58,6 @@ fun main() {
         }
     }
 
-//    //depositando conta 1
-//    c1.deposita(50.0)
-//    //depositando na conta 2
-//    c2.deposita(70.0)
-//
-//    //sacando da conta 1
-//    c1.saca(20.0)
-//
-//    //sacando da conta 2
-//    c2.saca(30.0)
-//
-//    //saque excedente
-//    c1.saca(500.0)
-//
-//    //transferencia conta 2 para conta 1
-//    if(c2.transfere(40.0, c1)){
-//        println("Transferência efetuada com sucesso!")
-//        println()
-//    }else{
-//        println("Falha na Transferência")
-//        println()
-//    }
-
 }
 
 
