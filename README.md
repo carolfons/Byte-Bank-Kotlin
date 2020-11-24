@@ -24,7 +24,7 @@
   <p>
    <ul>
   <li> Linguagem: Kotlin</li>
-  <li> IDE: Eclipse</li>
+  <li> IDE: IntelliJ</li>
   </ul>
   </p>
   
