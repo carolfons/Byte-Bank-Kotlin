@@ -1,11 +1,13 @@
 package org.kotlinlang.play
 
-class Gerente(
+class Diretor(
         nome:String,
         cpf:String,
         salario:Double,
-        val senha: Int
-):Funcionario( //gerente herda da classe de funcionários
+        val senha: Int,
+        val plr:Int
+
+):Funcionario( //Diretor herda da classe de funcionários
         nome = nome,
         cpf = cpf,
         salario = salario) {
@@ -20,8 +22,7 @@ class Gerente(
 
     override val bonificacao: Double
         get() {
-            return salario * 0.1 +salario
+            return super.bonificacao +salario + plr
         }
-
 }
 
