@@ -1,8 +1,8 @@
 package org.kotlinlang.play
 
 fun testaComportamentosConta() {
-    val c1 = Conta("Alex", 1000)
-    val c2 = Conta("Fran", 1001)
+    val c1 = ContaCorrente("Alex", 1000)
+    val c2 = ContaPoupanca("Fran", 1001)
 
     //conta 1
     c1.deposita(200.0)

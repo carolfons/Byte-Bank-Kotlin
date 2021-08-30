@@ -1,8 +1,8 @@
 package org.kotlinlang.play
 
-open class Conta(var titular:String, val numero: Int) { //construtor primário, onde ja é possível declarar a variável
+abstract open class Conta(var titular:String, val numero: Int) { //construtor primário, onde ja é possível declarar a variável
      var saldo = 0.0
-        private set //setter privado apenas a própria classe altera seu valor diretamente
+        protected set //setter privado apenas a própria classe altera seu valor diretamente
 
     //método para depositar
     fun deposita(valor: Double) {
@@ -16,24 +16,7 @@ open class Conta(var titular:String, val numero: Int) { //construtor primário, 
 
 
     //método para sacar
-    open fun saca(valor: Double) {
-        if (saldo >= valor) {
-            println("Sacando na conta do titular: ${this.titular}")
-            println("Quantidade Sacada: $valor")
-            val valorAntigo = this.saldo
-            this.saldo -= valor
-            println("Saldo Inicial: $valorAntigo")
-            println("Saldo Final: ${this.saldo}")
-            println()
-        } else {
-            println("Sacando na conta do titular: ${this.titular}")
-            println("Quantidade Sacada: $valor")
-            println("Erro! Valor de saque maior que saldo!")
-            println("Saldo da conta: ${this.saldo}")
-            println("Valor: $valor")
-            println()
-        }
-    }
+    abstract open fun saca(valor: Double)
 
     //métoda para transferir
     fun transfere(valor: Double, destino: Conta): Boolean {

@@ -1,11 +1,11 @@
 package org.kotlinlang.play
 
  fun testaFuncionarios() {
-    val alex = Funcionario(nome = "Alex",
+    val alex = Analista(nome = "Alex",
             cpf = "111.111.111-12",
             salario = 1000.0)
 
-    println("Funcionário")
+    println("Analista")
     println("nome: ${alex.nome}")
     println("cpf: ${alex.cpf}")
     println("salário: ${alex.salario}")

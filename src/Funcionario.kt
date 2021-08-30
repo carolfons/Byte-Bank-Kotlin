@@ -1,16 +1,12 @@
 package org.kotlinlang.play
 
-open class Funcionario(val nome: String,
+abstract class Funcionario(val nome: String,
                   val cpf: String,
                   val salario: Double
 
 )
 {
-    // function to property
-    open val bonificacao: Double
-        get() {
+    abstract  val bonificacao: Double
 
-            return salario * 0.1
-        }
 
 }
